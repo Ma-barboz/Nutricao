@@ -1,7 +1,19 @@
 @charset "UTF-8";
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(201, 250, 234);
     color: rgb(5, 5, 5);
-    
+}
+
+div.topo {
+	width: 1000px;
+	background-color: rgb(127, 228, 198);
+	margin: -20px auto 0px auto; /*espaço externo*/
+	padding: 10px 10px 10px 10px; /*espaço interno*/
+}
+
+div.parte{
+	width: 1000px;
+	background-color: white);
+	margin: -20px auto 0px auto; /*espaço externo*/
+	padding: 10px 10px 10px 10px; /*espaço interno*/
 }
