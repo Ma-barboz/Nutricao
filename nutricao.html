@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutri Health - Nutrição</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>
+</head>
+<body>
+<div id=topo>
+    <div class=parte>
+        <h1>Nutri Health</h1>
+       <script>
+    // Obtém a data/hora atual
+var data = new Date();
+
+// Guarda cada pedaço em uma variável
+var dia     = data.getDate();           // 1-31
+var dia_sem = data.getDay();            // 0-6 (zero=domingo)
+var mes     = data.getMonth();          // 0-11 (zero=janeiro)
+var ano2    = data.getYear();           // 2 dígitos
+var ano4    = data.getFullYear();       // 4 dígitos
+var hora    = data.getHours();          // 0-23
+var min     = data.getMinutes();        // 0-59
+var seg     = data.getSeconds();        // 0-59
+var mseg    = data.getMilliseconds();   // 0-999
+var tz      = data.getTimezoneOffset(); // em minutos
+
+// Formata a data e a hora (note o mês + 1)
+var str_data = dia + '/' + (mes+1) + '/' + ano4;
+var str_hora = hora + ':' + min + ':' + seg;
+
+// Mostra o resultado
+document.write('Hoje é ' + str_data + ' às ' + str_hora);
+        </script>
+    </div>
+    <div class=parte>
+        <img src="logo.jpeg" width="200"/>
+        <p> BEM - VINDO </p>
+    </div>
+    <div class=parte>
+        <h3>Calcule seu IMC</h3>
+        <a href="calculo.html"><img src="unnamed.jpg" width="200"/></a>
+    </div>
+
+    <div class=parte>
+        <h3>Dietas</h3>
+        <a href="https://www.tuasaude.com/c/dieta-e-nutricao/"><img src="dieta2.jpg" width="200"/></a>
+    </div>
+    <div class=parte>
+        <h3>Exercicios</h3>
+        <a href="https://www.tuasaude.com/3-exercicios-simples-para-fazer-em-casa-e-perder-barriga/"><img src="5-melhores-exercicios-fisicos.jpg" width="200" /> </a>
+    </div>
+    <div class=parte>
+    <h3>Covid - 19</h3>
+    <a href="https://www.google.com/search?safe=strict&rlz=1C1GCEA_enBR917BR917&sxsrf=ALeKk00mBJaPHSbewC8un9mjJq6ayV1OSg:1620685811554&q=COVID-19&biw=1707&bih=751#wptab=s:H4sIAAAAAAAAAONgVuLVT9c3NMwySk6OL8zJecTozS3w8sc9YSmnSWtOXmO04eIKzsgvd80rySypFNLjYoOyVLgEpVB1ajBI8XOhCvHsYuL2SE3MKckILkksKV7EKptaDGQcXltckpmcWKyQkq-QnF-Un5dYdnhtUWkxAPmw1DmNAAAA">
+    <img src="images.jpg" width="200" />
+    </a>
+    </div>
+    <div class=parte>
+        <a href="index.html"><button>VOLTAR</button></br></a>
+    </div>
+</div>
+</body>
+</html>

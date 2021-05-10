@@ -14,7 +14,7 @@ div#topo {
 div.parte{
 	width: 500px;
 	background-color: white;
-	margin: 30px auto 0px auto; /*espaço externo*/
+	margin: 15px auto auto auto; /*espaço externo*/
 	box-shadow: 1px 1px 1px rgba(0,0,0,.5);
 	padding: 10px auto 0px auto; /*espaço interno*/
 	text-align: center;
