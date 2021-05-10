@@ -4,16 +4,26 @@ body {
     color: rgb(5, 5, 5);
 }
 
-div.topo {
-	width: 1000px;
+div#topo {
+	width: 600px;
 	background-color: rgb(127, 228, 198);
 	margin: -20px auto 0px auto; /*espaço externo*/
 	padding: 10px 10px 10px 10px; /*espaço interno*/
 }
 
 div.parte{
-	width: 1000px;
-	background-color: white);
-	margin: -30px auto 10px auto; /*espaço externo*/
-	padding: 10px 10px 10px 10px; /*espaço interno*/
+	width: 500px;
+	background-color: white;
+	margin: 30px auto 0px auto; /*espaço externo*/
+	box-shadow: 1px 1px 1px rgba(0,0,0,.5);
+	padding: 10px auto 0px auto; /*espaço interno*/
+	text-align: center;
+	vertical-align:middle;
+	
+}
+
+button{
+	margin: 5px auto 5px auto;
+	padding: 5px auto 0px auto;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5);	
 }

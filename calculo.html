@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nutri Health</title>
     <link rel="stylesheet" type="text/css" href="estilo.css"/>
+    <script type="text/javascript">
+        function CalculoImc(){
+        var peso = parseFloat(document.formImc.peso.value);
+        var altura = parseFloat(document.formImc.altura.value);
+        var imc = peso/(altura*altura);
+        document.formImc.resultado.value = imc.toFixed(2);
+        return false;
+        }          
+    </script>
 </head>
 <body>
 <div id=topo>
@@ -37,19 +46,19 @@ document.write('Hoje é ' + str_data + ' às ' + str_hora);
     </div>
     <div class=parte>
         <img src="logo.jpeg" width="200"/>
-        <p> BEM - VINDO </p>
+        <p> Cálculo IMC </p>
     </div>
-    <div class=parte>
-        <h2>Historico </h2>
-        <p>Peso: 70 kg</p> 
-        <p>Altura: 1.70</p>
-        <p>IMC: 24.22</p>
-    </div>
-    <div class=parte>
-    
-       <a href="calculo.html"><button>Calculo de IMC</button></br></a>
-       <a href="nutricao.html"><button>Nutrição</button></a>
-    </div>
+<div class=parte>
+    <br/>
+    <form  name="formImc" method="post" onsubmit="return CalculoImc();">
+
+        <p>Peso: <input type="text" name="peso"></p>
+        <p>Altura: <input type="text" name="altura"></p>
+        <p><input type="submit" value="Calcular">
+        <input type="reset" value="Limpar"></p>
+        <p>Resultado:<input type="text" name="resultado"></p>
+        
+    </form>
 </div>
 </body>
 </html>
